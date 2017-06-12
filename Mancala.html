@@ -1,0 +1,82 @@
+<!DOCTYPE=HTML>
+<html>
+<head>
+    <link type='text/css' href='Mancala.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<title>Mancala Game</title>
+	
+</head>
+
+<body>
+
+	<div id='header'>
+		<div id='headerbox'>
+			<h1>Mancala</h1>
+			<img src='img/header.png'>
+		</div>
+	</div>
+	<div id='bodybox'>
+
+		<div id='mancala'>
+
+			<div id='turnAnnouncer'>Turn: <span id='playerTurn'></span></div>
+			<div id='waiting'></div>
+
+			<div id='pit1_1' onmousedown='newTurn(0, 1)'>
+			<span id='pit1_1t'></span>
+			</div>
+			<div id='pit1_2'>
+			<span id='pit1_2t' onmousedown='newTurn(1, 1)'></span>
+			</div>
+			<div id='pit1_3'>
+			<span id='pit1_3t' onmousedown='newTurn(2, 1)'></span>
+			</div>
+			<div id='pit1_4'>
+			<span id='pit1_4t' onmousedown='newTurn(3, 1)'></span>
+			</div>
+			<div id='pit1_5'>
+			<span id='pit1_5t' onmousedown='newTurn(4, 1)'></span>
+			</div>
+			<div id='pit1_6'>
+			<span id='pit1_6t' onmousedown='newTurn(5, 1)'></span>
+			</div>
+
+			<div id='kalaha1' class='kalaha'>
+			<span id='kalaha1t'></span>
+			</div>
+
+			<div id='pit2_1'>
+			<span id='pit2_1t' onmousedown='newTurn(0, 2)'></span>
+			</div>
+			<div id='pit2_2'>
+			<span id='pit2_2t' onmousedown='newTurn(1, 2)'></span>
+			</div>
+			<div id='pit2_3'>
+			<span id='pit2_3t' onmousedown='newTurn(2, 2)'></span>
+			</div>
+			<div id='pit2_4'>
+			<span id='pit2_4t' onmousedown='newTurn(3, 2)'></span>
+			</div>
+			<div id='pit2_5'>
+			<span id='pit2_5t' onmousedown='newTurn(4, 2)'></span>
+			</div>
+			<div id='pit2_6'>
+			<span id='pit2_6t' onmousedown='newTurn(5, 2)'></span>
+			</div>
+
+			<div id='kalaha2' class='kalaha'>
+			<span id='kalaha2t'></span>
+			</div>
+
+			<div id='player1Wins'>Player 1 Wins!</div>
+			<div id='player2Wins'>Player 2 Wins!</div>
+
+			<button id='new2p' onmousedown='newGame(2)'>New Game (2p)</button>
+			<button id='new1p' onmousedown='newGame(1)'>New Game (vs. AI)</button>
+
+		</div>
+	</div>
+
+</body>
+	<script src='MancalaJS.js'></script>
+</html>
